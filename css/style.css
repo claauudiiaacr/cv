@@ -5,7 +5,7 @@ body {
   padding: 20px;
 }
 
-/* Contenedor principal */
+
 .cv-container {
   max-width: 900px;
   margin: auto;
@@ -16,7 +16,7 @@ body {
   animation: fadeIn 1s ease-in;
 }
 
-/* Encabezado centrado */
+
 .cv-header {
   text-align: center;
   padding: 40px 20px;
@@ -49,7 +49,7 @@ body {
   font-size: 0.95em;
 }
 
-/* Secciones */
+
 .cv-section {
   padding: 20px 30px;
   border-bottom: 1px solid #eee;
@@ -81,7 +81,7 @@ body {
   font-weight: bold;
 }
 
-/* Redes */
+
 .redes .social-links {
   display: flex;
   justify-content: center;
@@ -100,9 +100,44 @@ body {
   color: #023e8a;
 }
 
-/* Animación */
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+.trabajo {
+  margin: 10px 0;
+  margin-left: 20px;
+  margin-right: 600px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  
+}
+
+.titulo {
+  cursor: pointer;
+  padding: 8px 10px;
+  font-weight: bold;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.detalle {
+  display: none;
+  padding: 8px 10px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.flecha {
+  transition: transform 0.3s ease;
+}
+.flecha.abierto {
+  transform: rotate(90deg);
 }
 
